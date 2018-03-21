@@ -24,6 +24,8 @@
     position: absolute;
     box-sizing: border-box;
     min-width: 100%;
+    will-change: transform;
+    contain: strict;
 }
 
 .ace_dragging .ace_scroller:before{
@@ -95,6 +97,7 @@
 }
 
 .ace_scrollbar {
+    contain: strict;
     position: absolute;
     right: 0;
     bottom: 0;
