@@ -51,7 +51,6 @@
     overflow : hidden;
     width: auto;
     top: 0;
-    bottom: 0;
     left: 0;
     cursor: default;
     z-index: 4;
@@ -59,6 +58,7 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    will-change: transform;
 }
 
 .ace_gutter-active-line {
@@ -72,7 +72,6 @@
 }
 
 .ace_gutter-cell {
-    will-change: transform;
     position: absolute;
     top: 0;
     left: 0;
@@ -107,6 +106,7 @@
     right: 0;
     bottom: 0;
     z-index: 6;
+    display: none; /*TODO*/
 }
 
 .ace_scrollbar-inner {
@@ -196,15 +196,22 @@
     width: auto;
     text-align: right;
     pointer-events: auto;
+    height: 1000000px;
+    will-change: transform;
+    contain: strict;
 }
 
 .ace_text-layer {
     font: inherit !important;
+    position: absolute;
+    height: 1000000px;
+    width: 1000000px;
+    will-change: transform;
+    contain: strict;
 }
 
 .ace_text-layer div {
     contain: strict;
-    will-change: transform;
     position: absolute;
     top: 0;
     left: 0;
