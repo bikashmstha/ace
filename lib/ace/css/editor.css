@@ -217,6 +217,10 @@
     right: 0;
 }
 
+.ace_text-layer .ace_line_group .ace_line {
+    position: relative;
+}
+
 .ace_cjk {
     display: inline-block;
     text-align: center;
